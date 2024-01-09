@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Project Editor</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="shortcut icon" href="../icon.svg">
+    </head>
+    <body>
+        <input type="button" onclick="getthing()" value="Get thing">
+        <div id="editfield">
+        </div>
+        <script>
+            function getthing()
+            {
+                const newElem = document.createElement("iframe");
+                newElem.src = "../Widgets/list.html";
+                newElem.width = "250px";
+                newElem.height = "350px";
+                newElem.style.borderWidth = "3px";
+                newElem.style.borderStyle = "solid";
+                newElem.style.borderColor = "#ddd"
+                newElem.style.boxShadow = "5px 10px 15px 0 #0007";
+                newElem.style.resize = "both";
+                newElem.style.position = "absolute";
+                newElem.style.left = "500px";
+                newElem.style.top = "200px";
+                const fieldElem = document.getElementById("editfield").appendChild(newElem);
+                fieldElem.id = "fieldElem";
+
+                const newElemhead = document.createElement("div")
+                newElemhead.width = "100%";
+                newElemhead.height = "50px";
+                newElemhead.style.marginTop = "-20px";
+                newElemhead.style.backgroundColor = "#37f";
+                newElemhead.style.zIndex = "5";
+                const fieldElemhead = document.getElementById("fieldElem").appendChild(newElemhead);
+                fieldElemhead.id = "fieldElemhead";
+            }
+            
+        </script>
+    </body>
+</html>

@@ -26,3 +26,32 @@ body
     top: calc(50% - 150px);
     left: 50px;
 }
+.headerlist
+{
+    border-style: dashed;
+    font-size: 30px;
+    border-width: 0;
+    border-bottom-width: 3px;
+    border-color: #777;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: calc(100vw - 70px);
+}
+.listinput
+{
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100vw - 25px);
+    font-size: 20px;
+    border-width: 0;
+    border-bottom-width: 3px;
+    border-style: solid;
+    border-color: #777;
+    display: flex;
+}
+#editfield
+{
+    float: right;
+    width: 90vw;
+}
